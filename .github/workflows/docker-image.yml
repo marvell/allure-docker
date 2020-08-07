@@ -1,4 +1,4 @@
-name: CI
+name: Docker Build and Push
 
 on:
   push:
@@ -16,3 +16,4 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USER }}
         password: ${{ secrets.DOCKERHUB_PASS }}
         repository: marvell/allure-portal
+        tags: latest
