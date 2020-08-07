@@ -15,5 +15,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USER }}
         password: ${{ secrets.DOCKERHUB_PASS }}
-        repository: marvell/allure-portal
-        tags: latest
+        repository: marvell/allure
+        tags: 2, latest
