@@ -2,7 +2,7 @@ FROM openjdk
 
 RUN set -xe && \
 	mkdir -p /allure && \
-	curl -sL https://dl.bintray.com/qameta/maven/io/qameta/allure/allure-commandline/2.13.1/allure-commandline-2.13.1.tgz | \
+	curl -sL https://dl.bintray.com/qameta/maven/io/qameta/allure/allure-commandline/2.13.5/allure-commandline-2.13.5.tgz | \
 	tar -xz -C /allure --strip-components=1 && \
 	ln -s /allure/bin/allure /usr/bin/allure
 
